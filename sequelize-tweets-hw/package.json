@@ -1,0 +1,25 @@
+{
+  "name": "tweets-hw-create",
+  "version": "1.0.0",
+  "description": "sequelize tweet hw",
+  "main": "index.js",
+  "scripts": {
+    "db:init": "dropdb --if-exists tweets_db && createdb tweets_db",
+    "db:reset": "node ./resetDb.js",
+    "db:seed": "node ./seed",
+    "db:queries": "node ./seed && node ./queries",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/wdi-nyc-bananas/sequelize-tweets-hw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.8.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.43.0"
+  }
+}
